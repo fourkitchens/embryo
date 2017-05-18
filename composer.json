@@ -30,23 +30,10 @@
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
-  "autoload": {
-    "classmap": [
-      "scripts/composer/ScriptHandler.php"
-    ]
-  },
-  "scripts": {
-  },
   "config": {
     "sort-packages": "true"
   },
   "extra": {
-    "drupal-scaffold": {
-      "excludes": [
-        ".htaccess",
-        "robots.txt"
-      ]
-    },
     "installer-paths": {
       "docroot/core": ["type:drupal-core"],
       "docroot/libraries/{$name}": ["type:drupal-library"],
