@@ -1,0 +1,57 @@
+{
+  "name": "fourkitchens/embryo",
+  "description": "Core assets for Drupal projects.",
+  "type": "drupal-profile",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jeff Tomlinson",
+      "role": "Architect",
+      "email": "jeff@fourkitchens.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  ],
+  "require": {
+    "acquia/lightning": "dev-8.x-2.x",
+    "drupal/admin_toolbar": "~1.0",
+    "drupal/field_group": "~1.0",
+    "drupal/paragraphs": "~1.0",
+    "drupal/redirect": "~1.0"
+  },
+  "require-dev": {
+  },
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "classmap": [
+      "scripts/composer/ScriptHandler.php"
+    ]
+  },
+  "scripts": {
+  },
+  "config": {
+    "sort-packages": "true"
+  },
+  "extra": {
+    "drupal-scaffold": {
+      "excludes": [
+        ".htaccess",
+        "robots.txt"
+      ]
+    },
+    "installer-paths": {
+      "docroot/core": ["type:drupal-core"],
+      "docroot/libraries/{$name}": ["type:drupal-library"],
+      "docroot/profiles/contrib/embryo/modules/contrib/{$name}": ["type:drupal-module"]
+    },
+    "patches": {}
+  }
+}
