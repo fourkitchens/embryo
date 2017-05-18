@@ -39,6 +39,10 @@
       "docroot/libraries/{$name}": ["type:drupal-library"],
       "docroot/profiles/contrib/embryo/modules/contrib/{$name}": ["type:drupal-module"]
     },
-    "patches": {}
+    "patches": {
+      "drupal/core": {
+        "Allow profiles to provide a base/parent profile": "https://www.drupal.org/files/issues/1356276-327-8.4.x.patch"
+      }
+    }
   }
 }
